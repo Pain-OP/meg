@@ -1,0 +1,2752 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>home page</title>
+
+<style>
+
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+}
+
+
+
+/*font*/
+.f1{
+	font-family: 'Rubik', sans-serif;
+}
+
+	/* color hover */
+
+	.cob{
+		color: black;
+	}
+
+.cgrey{
+	color: grey;
+}
+
+.cw{
+	color: white;
+}
+.cr{
+	color: red;
+}
+
+.bcw{
+	background-color: white;
+}
+
+.cb{
+	background-color: black;
+}
+
+.bctr{
+	background-color: #0000007a;
+}
+
+.bcg{
+	background-color: #69b74f;
+	color: white;
+}
+
+.bcp{
+	background-color: #e36493;
+	color: white;
+}
+
+.bcb{
+	background-color: #3d9ddf;
+	color: white;
+}
+
+.bcr{
+	background-color: #f75656;
+	color: white;
+}
+
+/*hover */
+
+.chr:hover{
+	color: red;
+}
+
+.chbr:hover{
+	color: white;
+	background-color: #f75656;
+}
+
+.chb:hover{
+	background-color:#303e4b;
+	color: white;
+}
+
+.img:hover{
+	    opacity: 1;
+    transform: scale(2.0);
+    position: relative;
+    transition: 2s;
+    
+  
+}
+
+/* div   */
+
+/*height*/
+
+.hi50{
+	height: 50%;
+}
+
+.hi100{
+	height: 100%;
+}
+
+.he5{
+	height: 5px;
+}
+
+.he10{
+	height: 10px;
+}
+
+.he15{
+	height: 15px;
+}
+
+.he20{
+	height: 20px;
+}
+
+.he25{
+	height: 25px;
+}
+
+.he30{
+	height: 30px;
+}
+
+.he35{
+	height: 35px;
+}
+
+.he37{
+	height: 36px;
+}
+
+.he40{
+	height: 40px;
+}
+
+.he45{
+	height: 45px;
+}
+
+.he50{
+	height: 50px;
+}
+
+.h70{
+	height: 70px;
+}
+
+.h80{
+	height: 80px;
+}
+
+.h60{
+	height: 60px;
+}
+
+.h1{
+	height: 100px;
+}
+
+.h120{
+	height: 120px;
+}
+
+.h150{
+	height: 150px;
+}
+
+.h2{
+	height: 200px;
+}
+
+.h250{
+	height: 250px;
+}
+
+.h350{
+	height: 300px;
+}
+
+.h3{
+	height: 350px;
+}
+
+
+.h4{
+	height: 400px;
+}
+
+.h420{
+	height: 420px;
+}
+
+.h450{
+	height: 450px;
+}
+
+.h5{
+	height: 500px;
+}
+
+.h550{
+	height: 550px;
+}
+
+.h6{
+	height: 600px;
+}
+
+.h7{
+	height: 700px;
+}
+
+.h8{
+	height: 800px;
+}
+
+.h850{
+	height: 850px;
+}
+
+.h9{
+	height: 900px;
+}
+
+.h10{
+	height: 1000px;
+}
+
+
+
+/*width*/
+
+
+.w1{
+	width: 100px;
+}
+
+.w190{
+	width: 190px;
+}
+
+.w2{
+	width: 200px;
+}
+
+.w269{
+	width: 269px;
+}
+
+.w3{
+	width: 300px;
+}
+
+.w4{
+	width: 400px;
+}
+
+.w5{
+	width: 500px;
+}
+
+.w6{
+	width: 600px;
+}
+
+.w7{
+	width: 700px;
+}
+
+.w8{
+	width: 800px;
+}
+
+.w9{
+	width: 900px;
+}
+.w95{
+	width: 950px;
+}
+
+.w10{
+	width: 1000px;
+}
+
+.w11{
+	width: 1100px;
+}
+
+/*width %*/
+
+.wi5{
+	width: 5%;
+}
+
+.wi6{
+	width: 6%;
+}
+
+.wi7{
+	width: 7%;
+}
+
+.wi8{
+	width: 8%;
+}
+
+.wi9{
+	width: 9%;
+}
+
+.wi10{
+	width: 10%;
+}
+
+.wi13{
+	width: 13%;
+}
+
+.wi14{
+	width: 14%;
+}
+
+.wi15{
+	width: 15%;
+}
+
+.wi16{
+	width: 16%;
+}
+
+.wi20{
+	width: 20%;
+}
+
+.wi24{
+	width: 24%;
+}
+
+.wi25{
+	width: 25%;
+}
+
+.wi30{
+	width: 30%;
+}
+
+.wi33{
+	width: 33%;
+}
+
+.wi35{
+	width: 35%;
+}
+
+.wi36{
+	width: 36%;
+}
+
+.wi37{
+	width: 37%;
+}
+
+.wi40{
+	width: 40%;
+}
+
+.wi48{
+	width: 48%;
+}
+
+.wi49{
+	width: 49%;
+}
+
+.wi45{
+	width: 45%;
+}
+
+.wi50{
+	width: 50%;
+}
+
+.wi55{
+	width: 55%;
+}
+
+.wi60{
+	width: 60%;
+}
+
+.wi65{
+	width: 65%;
+}
+
+.wi67{
+	width: 67%;
+}
+
+.wi70{
+	width: 70%;
+}
+
+.wi75{
+	width: 72.2%;
+}
+
+.wi80{
+	width: 80%;
+}
+
+.wi84{
+	width: 84%;
+}
+
+.wi85{
+	width: 85%;
+}
+
+.wi100{
+	width: 100%;
+}
+/*1st div */
+	
+.d1{
+	background-color: black;
+	height: 35px;
+	width: 100%;
+	margin: 0px;
+
+}
+
+.d2{
+
+	width: 20%;
+	height: 35px;
+}
+
+.d3{
+
+	width: 60%;
+	height: 35px;
+}
+
+.d4{
+
+	width: 20%;
+	height: 35px;
+}
+.fl{
+	float: left;
+}
+
+/* logo div */
+
+
+
+
+/*margin*/
+
+.margin{
+	margin: 0px;
+}
+
+.mli15{
+	margin-left: 15%;
+}
+
+.ml5{
+	margin-left: 5px;
+}
+
+.ml6{
+	margin-left: 6px;
+}
+
+.ml10{
+	margin-left: 10px;
+}
+
+.ml15{
+	margin-left: 15px;
+}
+
+.ml20{
+	margin-left: 20px;
+}
+
+.ml25{
+	margin-left: 25px;
+}
+
+
+.ml30{
+	margin-left: 30px;
+}
+
+
+.ml35{
+	margin-left: 35px;
+}
+
+
+.ml40{
+	margin-left: 40px;
+}
+
+
+.ml45{
+	margin-left: 45px;
+}
+
+.ml50{
+	margin-left: 50px;
+}
+
+.ml100{
+	margin-left: 100px;
+}
+
+.ml55{
+	margin-left: 55px;
+}
+
+.ml72{
+	margin-left: 72px;
+}
+
+.ml140{
+	margin-left: 140px;
+}
+
+.ml166{
+	margin-left: 166px;
+}
+
+.ml172{
+	margin-left: 172px;
+}
+
+.ml190{
+	margin-left: 190px;
+}
+
+.ml200{
+	margin-left: 220px;
+}
+
+.ml235{
+	margin-left: 237px;
+}
+
+.ml325{
+	margin-left: 325px;
+}
+
+.ml340{
+	margin-left: 340px;
+}
+
+.ml410{
+	margin-left: 410px;
+}
+
+.ml450{
+	margin-left: 450px;
+}
+
+
+.mr200{
+	margin-right: 200px;
+}
+
+
+.mt0{
+	margin-top: 0px;
+}
+
+.mt5{
+	margin-top: 5px;
+}
+
+.mt10{
+	margin-top: 10px;
+}
+
+.mt15{
+	margin-top: 15px;
+}
+
+.mt20{
+	margin-top: 20px;
+}
+
+.mt25{
+	margin-top: 25px;
+}
+
+.mt30{
+	margin-top: 30px;
+}
+
+.mt35{
+	margin-top: 35px;
+}
+
+.mt40{
+	margin-top: 40px;
+}
+
+.mt72{
+	margin-top: 72px;
+}
+
+.mt90{
+	margin-top: 90px;
+}
+
+.mt110{
+	margin-top: 115px;
+}
+
+.mt140{
+	margin-top: 140px;
+}
+
+.mt190{
+	margin-top: 190px;
+}
+
+.mt210{
+	margin-top: 210px;
+}
+
+.mt250{
+	margin-top: 250px;
+}
+
+.mt410{
+	margin-top: 410px;
+}
+
+.mt460{
+	margin-top: 480px;
+}
+
+.mb10{
+	margin-bottom: 10px;
+}
+
+.font10{
+	font-size: 10px;
+}
+
+.font15{
+	font-size: 15px;
+}
+
+.font21{
+	font-size: 21px;
+}
+
+.font28{
+	font-size: 28px;
+}
+
+.font18{
+	font-size: 18px;
+}
+
+.font40{
+	font-size: 40px;
+}
+
+/*img*/
+
+/*slider img*/
+
+.simg1{
+	background-image: url(img/slider/slider1.jpg);background-size: cover;background-position: center;
+}
+
+.simg2{
+	background-image: url(img/slider/slider2.jpg);background-size: cover;background-position: center;
+}
+
+.simg3{
+	background-image: url(img/slider/slider3.jpg);background-size: cover;background-position: center;
+}
+
+.trending3{
+	background-image: url(img/trending3.jpg);background-size: 110% 110%;background-position: center;
+	transition: 2s;
+
+}
+
+.mostviewed3{
+	background-image: url(img/mostviewed3.jpg);background-size: cover;background-position: center;
+}
+
+.mostviewed1{
+	background-image: url(img/mostviewed1.jpg);background-size: cover;background-position: center;
+}
+
+.trending3:hover{
+	background-image: url(img/trending3.jpg);background-size: 100% 100%;background-position: center;
+	transition: 2s;
+
+}
+
+.pd1{
+	background-image: url(img/pd1.jpg);background-size: cover;background-position: center;
+}
+
+.blog6{
+	background-image: url(img/blog6.jpg);background-size: 110% 110%;background-position: center;
+	transition: 2s;
+}
+
+.blog6:hover{
+	background-image: url(img/blog6.jpg);background-size: 100% 100%;background-position: center;
+	transition: 2s;
+}
+
+.small4{
+	background-image: url(img/small4.jpg);background-size: cover;background-position: center;
+}
+
+.gallery1{
+	background-image: url(img/gallery1.jpg);background-size: cover;background-position: center;
+}
+
+.small6{
+	background-image: url(img/small6.jpg);background-size: cover;background-position: center;
+}
+
+.small1{
+	background-image: url(img/small1.jpg);background-size: cover;background-position: center;
+}
+
+.small2{
+	background-image: url(img/small2.jpg);background-size: cover;background-position: center;
+}
+
+.small3{
+	background-image: url(img/small3.jpg);background-size: cover;background-position: center;
+}
+
+.trending2{
+	background-image: url(img/trending2.jpg);background-size: 110% 110%;background-position: center;
+	transition: 2s;
+}
+
+.trending2:hover{
+	background-image: url(img/trending2.jpg);background-size: 100% 100%;background-position: center;
+	transition: 2s;
+}
+
+.pd2{
+	background-image: url(img/pd2.jpg);background-size: cover;background-position: center;
+	background-attachment: fixed;
+}
+
+.mostviewed2{
+	background-image: url(img/mostviewed2.jpg);background-size: cover;background-position: center;
+}
+
+.mostviewed4{
+	background-image: url(img/mostviewed4.jpg);background-size: cover;background-position: center;
+}
+
+.fashion1{
+	background-image: url(img/fashion1.jpg);background-size: cover;background-position: center;
+}
+
+.fashion2{
+	background-image: url(img/fashion2.jpg);background-size: cover;background-position: center;
+}
+
+.fashion3{
+	background-image: url(img/fashion3.jpg);background-size: cover;background-position: center;
+}
+
+.fashion4{
+	background-image: url(img/fashion4.jpg);background-size: cover;background-position: center;
+}
+
+.fashion5{
+	background-image: url(img/fashion5.jpg);background-size: cover;background-position: center;
+}
+
+
+.gallery1{
+	background-image: url(img/gallery1.jpg);background-size: 110% 110%;background-position: center;
+	transition: 2s;
+}
+
+.gallery1:hover{
+	background-image: url(img/gallery1.jpg);background-size: 100% 100%;background-position: center;
+	transition: 2s;
+}
+
+
+
+.gallery2{
+	background-image: url(img/gallery2.jpg);background-size: 110% 110%;background-position: center;
+	transition: 2s;
+}
+
+.gallery2:hover{
+	background-image: url(img/gallery2.jpg);background-size: 100% 100%;background-position: center;
+	transition: 2s;
+}
+
+
+
+.gallery3{
+	background-image: url(img/gallery3.jpg);background-size: 110% 110%;background-position: center;
+	transition: 2s;
+}
+
+.gallery3:hover{
+	background-image: url(img/gallery3.jpg);background-size: 100% 100%;background-position: center;
+	transition: 2s;
+}
+
+
+
+.gallery4{
+	background-image: url(img/gallery4.jpg);background-size: 110% 110%;background-position: center;
+	transition: 2s;
+}
+
+.gallery4:hover{
+	background-image: url(img/gallery4.jpg);background-size: 100% 100%;background-position: center;
+	transition: 2s;
+}
+
+
+
+.gallery5{
+	background-image: url(img/gallery5.jpg);background-size: 110% 110%;background-position: center;
+	transition: 2s;
+}
+
+.gallery5:hover{
+	background-image: url(img/gallery5.jpg);background-size: 100% 100%;background-position: center;
+	transition: 2s;
+}
+
+
+
+.gallery6{
+	background-image: url(img/gallery6.jpg);background-size: 110% 110%;background-position: center;
+	transition: 2s;
+}
+
+.gallery6:hover{
+	background-image: url(img/gallery6.jpg);background-size: 100% 100%;background-position: center;
+	transition: 2s;
+}
+
+
+.footerbg{
+	background-image: url(img/footerbg.jpg);background-size: cover;background-position: center;
+	background-attachment: fixed;
+}
+
+
+.footer1{
+	background-image: url(img/footer1.jpg);background-size: cover;background-position: center;
+}
+
+.footer2{
+	background-image: url(img/footer2.jpg);background-size: cover;background-position: center;
+}
+
+.footer3{
+	background-image: url(img/footer3.jpg);background-size: cover;background-position: center;
+}
+
+.footer4{
+	background-image: url(img/footer4.jpg);background-size: cover;background-position: center;
+}
+
+.footerbg{
+	background-image: url(img/footerbg.png);background-size: cover;background-position: center;
+	background-attachment: fixed;
+}
+
+.shadow{
+	height: 100%;
+	width: 100%;
+	background-color: ;
+	transition: 2s;
+}
+.shadow:hover{
+	height: 100%;
+	width: 100%;
+	background-color: #222b6c33;
+	transition: 2s;
+}
+
+
+/*border*/
+
+.bsolid{
+	border: 1px solid;
+	border-color: white;
+}
+
+.bordern{
+	border: none;
+}
+
+.borders{
+	box-shadow: 1px 1px 1px;
+}
+
+.borderc{
+	border-color: white;
+}
+
+.bordercg{
+	border-color: grey;
+}
+
+.borderso{
+	border-top: 1px groove;
+	border-bottom: 1px groove;
+}
+
+.bordercr{
+	border-color: #f75656;
+}
+
+.borderd{
+	border: 1px dotted;
+}
+
+.borderr{
+	border-radius: 20px 20px;
+}
+
+.black{
+	height: 100%;width: 100%;    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+.blacks{
+	height: 300px;width: 100%;    background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+.fr{
+	float: right;
+}
+
+.text{text-decoration: none;}
+
+.psicky{
+	    position: sticky;
+    top: 0;
+    background: white;
+}
+
+</style>
+
+
+
+
+
+
+
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+<div class="d1">
+	
+<div class="d2 fl"> <p class=" ml200 cw mt10 font15"><i class="fa fa-clock-o" aria-hidden="true"></i> 2023-9-7</p> </div>
+
+<div class="d3 fl"> <p class="cw font15 mt10"><i class="fa fa-cloud" aria-hidden="true"></i>Bapunagar,Ahmedabad</p> </div>
+
+<div class="d4 fl"> <p class="cw font15 fl ml50 mt10 chr"> <i class="fa fa-facebook" aria-hidden="true"></i></p>
+ <p class="cw font15 fl ml10 mt10 chr"><i class="fa fa-twitter" aria-hidden="true"></i></p> 
+ <p class="cw font15 fl ml10 mt10 chr"><i class="fa fa-instagram" aria-hidden="true"></i></p> </div>
+
+</div>
+
+
+
+<div class="h80 wi100 psicky">
+	
+<div class=" h80 fl wi30 "><a href="index.html"> <img src="img/logo1.png" class="h60 ml200 w2 mt10"></a> </div>
+
+<div class=" h80 fl  w11"> 
+
+<div class=" h80 fl w1 f1 "> <p class=" font15 mt30 ml45  ">
+	<b> <a href="index.html" class="text cr" > HOME</a></b></p> </div>
+
+<div class=" h80 fl w1 f1"> <p class=" font15 mt30 ml30  ">
+	<b><a href="blog.html" class="text cob chr"> BLOG</a></b></p></div>
+
+<div class=" h80 fl w1 f1 text"> <p class=" font15 mt30 ml5  ">
+	<b><a href="shoplist.html" class="text cob chr"> SHOP LIST</a></b></p></div>
+
+<div class=" h80 fl w1 f1"> <p class=" font15 mt30  ml10 ">
+	<b><a href="account.html" class="text cob chr"> ACCOUNT</a></b></p></div>
+
+<div class=" h80 fl wi5 f1"> <p class=" font15 mt30  ml5  ">
+	<b><a href="cart.html" class="text cob chr"> CART</a></b></p></div>
+
+<div class=" h80 fl wi10 f1"> <p class=" font15 mt30  ml10 ">
+	<b><a href="checkout.html" class="text cob chr"> CHECH OUT</a></b> </p></div>
+
+<div class=" h80 fl w1 f1"> <p class=" font15 mt30  ml15 ">
+	<b><a href="detail.html" class="text cob chr"> DETAIL</a></b></p></div>
+
+<div class=" h80 fl w1 f1"> <p class=" font15 mt30   ">
+	<b><a href="aboutus.html" class="text cob chr"> ABOUT US</a></b></p></div>
+
+<div class=" h80 fl wi15 f1  "> <p class=" font15 mt30 ">
+	<b><a href="contectus.html" class="text cob chr">CONTACT US</a> <i class="fa fa-search chr ml10" aria-hidden="true"></i></b></p></div>
+
+<div class=" h80 fl wi15 f1  "> <p class=" font15 mt30  chr "></p></div>
+
+</div>
+
+</div>
+
+
+
+<div class="h6 wi100 ">
+	
+<div class="h6 wi60 fl simg1 ">
+	<div class="black">
+	<button class=" he30 wi6 cb mt460 ml410 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi7 cb bcp chb bordern borders ml6">#health</button>
+	<br>
+
+	<h1 class="ml325 mt10 cw f1 font28 mb10">Discover your true health</h1>
+
+	<i class="fa fa-user ml340 font15 cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 May</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+</div></div>
+
+<div class=" h6 wi40 fl ">
+	
+	<div class=" hi50 wi100 simg2">
+		<div class="blacks">
+		<button class=" he30 wi20 cb mt190 ml200 bcb chb bordern borders">#Entertenment</button>
+		<button class=" he30 wi15 cb   bcg chb bordern borders ml6">#health</button>
+		<br>
+
+	<h1 class="ml172 mt10  f1 font28 mb10 cw">Top 10 Dancer you should</h1>
+
+	<i class="fa fa-user font15 ml190 cw" aria-hidden="true"></i>
+	<span class="cw">Micheal Jackson</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">1 July</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+	</div></div>
+
+	<div class=" hi50 wi100 simg3 ">
+			<div class="blacks">
+		<button class=" he30 wi15 cb mt190 ml235 bcb chb bordern borders">#Religion</button>
+		<button class=" he30 wi10 cb   bcg chb bordern borders ml10">#New</button>
+		<br>
+
+	<h1 class="ml172 mt10  f1 font28 mb10 cw">What did Buddha teach?</h1>
+
+	<i class="fa fa-user font15 ml190 cw" aria-hidden="true"></i>
+	<span class="cw">Tom Richadrson</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 June</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+	</div></div>
+	</div>
+
+</div>
+
+
+<div class=" h150  wi100">
+	<br>
+	<div class=" wi70 h60 mli15 mt72 ">
+		<div class=" bcr wi20 h60 fl borderso bordercr"><br>
+			<h2 class="cw f1 mt0 ml30"> Braking News</h2>
+		</div>
+
+		<div class=" h60 wi80  fl borderso ">
+
+			<marquee class=" mt20 f1 " style="height: 100%;width: 100%;">
+				<i class="fa fa-circle font10" aria-hidden="true"></i><span class="chr">“Speaks perfect English”: Trump’s offensive praise of a Latino Border Patrol agent </span><i class="fa fa-circle font10" aria-hidden="true"></i> <span class="chr">Watch J. Lo live her best life, Nicki Minaj go regal, and Ariana Grande go religious. </span><i class="fa fa-circle font10" aria-hidden="true"></i><span class="chr">Tesla fans have found a new person to blame for Elon Musk’s troubles: his girlfriend</span> <i class="fa fa-circle font10" aria-hidden="true"></i><span class="chr">The Pentagon won’t check if US bombs killed kids in Yemen. CNN did it for them.</span>
+			</marquee>
+		</div>
+
+	</div>
+</div>
+
+
+
+
+<div class="h6 wi100 mt5">
+
+	<div class="h150 wi100 "><br><br>
+		<p class="mli15 f1 font28 mt20 mb10"><b>Top Trending</b></p>
+		<hr class="wi70 mli15 mt25">
+
+	</div>
+
+	<div class=" h450 wi100 ">
+		
+		<div class="h450 wi50 fl">
+			<div class="h4 wi70  ml235 trending3 ">
+				<div class="shadow">
+				<div class="hi50 wi100"></div>
+				<div class="hi50 wi100 bctr cw "><br>
+				<p class="ml72  font21 f1 mt0 mb10">Creativity comes within itself for everyone</p>	
+				<button class=" he30 wi10 cb mt0 ml140 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Education</button>
+				<button class=" he30 wi15 cb bcp chb bordern borders ml6">#Children</button><br>
+				<center><p class="f1 font15 ">Lorem Ipsum has been the industry's standard dummy text ever since <br>the 1500s,when an unknown printer took a galley.</p>
+
+
+	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 May</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+
+				</center>
+				</div>
+</div>
+			</div>
+		</div>
+
+
+
+
+
+
+		<div class="h450 wi50  fl">
+			
+			<div class="h450 wi40  fl">
+
+				<div class="h4 wi85 ml30 mostviewed3"> <div class="black"><br>
+					<p class="mli15 f1 font21 mt250 mb10 cw"><b>Traffic, A Big Problem</b></p>
+					<hr class="wi85 ml20 mt0">
+				<center>	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 May</span>
+<br>
+	<button class=" he30 wi20 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi25 cb bcp chb bordern borders ml6">#Politics</button>
+
+</center>
+
+
+				</div> </div>
+			</div>
+
+			<div class="h450 wi60 fl">
+				<div class="h4 w269 ml15 mostviewed1"> <div class="black"><br>
+					<p class="mli15 f1 font21 mt250 mb10 cw"><b>Best Gadgets in town</b></p>
+					<hr class="wi85 ml20 mt0">
+				<center>	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">Mr. Gadget</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 April</span>
+<br>
+	<button class=" he30 wi20 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi25 cb bcp chb bordern borders ml6">#Politics</button>
+
+</center>
+
+
+				</div> </div>
+			</div>
+
+
+		</div>
+
+
+	</div>
+	
+</div>
+
+
+
+
+<div class="h2 wi100 "><br>
+	<div class="h120  wi60 ml340 pd1"></div>
+</div>
+
+<div class="h1 wi100">
+	<p class="mli15 f1 font28 mt20 mb10"><b>Latest Posts</b></p>
+	<hr class="wi70 mli15 mt25">
+</div>
+
+
+
+
+<div class="wi100 h9 ">
+	
+<div class="h9 wi50 fl">
+			<div class="h4 wi70  ml235 blog6 ">
+				<div class="shadow">
+				<div class="hi50 wi100"></div>
+				<div class="hi50 wi100 bctr cw "><br>
+			<center>	<p class="  font21 f1 mt0 mb10"><b>New Generation of people loving food</b></p>	</center>
+				<button class=" he30 wi10 cb mt0 ml140 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Sports</button>
+				<button class=" he30 wi15 cb bcp chb bordern borders ml6">#Trending</button><br>
+				<center><p class="f1 font15 ">Lorem Ipsum has been the industry's standard dummy text ever since <br>the 1500s,when an unknown printer took a galley.</p>
+
+
+	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 May</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+
+				</center>
+				</div>
+</div>
+			</div>
+
+
+
+			<div class="h150 wi100  ">
+
+				<div class="h120 wi50  fl">
+					<div class="h120 wi60 fl"></div>
+					<div class="h120 wi40 fl small4 mt25 "></div>
+				</div>
+
+				<div class="h120 wi50  fl"><b> 
+					<p class="font18 ml15 f1 mt25 chr">Watch: the 3 best performances of the 2018 VMLs</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				<br>
+				<hr class="wi70 ml235 mt140 borderd">
+
+			</div>
+
+
+
+
+		<div class="h150 wi100  ">
+
+				<div class="h120 wi50  fl">
+					<div class="h120 wi60 fl"></div>
+					<div class="h120 wi40 fl gallery1 mt25 "></div>
+				</div>
+
+				<div class="h120 wi50  fl"><b> 
+					<p class="font18 ml15 f1 mt25 chr">Music bringing people together everywhere</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcp chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				<br>
+				<hr class="wi70 ml235 mt140 borderd">
+
+			</div>
+
+
+
+
+<div class="h150 wi100  ">
+
+				<div class="h120 wi50  fl">
+					<div class="h120 wi60 fl"></div>
+					<div class="h120 wi40 fl small6 mt25 "></div>
+				</div>
+
+				<div class="h120 wi50  fl"><b> 
+					<p class="font18 ml15 f1 mt25 chr">“Speaks perfect English”: Trump’s offensive praise of a Latino Border Patrol agent</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				<br>
+				<hr class="wi70 ml235 mt140 borderd">
+
+			</div>
+
+
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+<div class="h9 wi50 fl  ">
+	
+
+<div class="h4 wi70 ml30 trending2 ">
+				<div class="shadow">
+				<div class="hi50 wi100"></div>
+				<div class="hi50 wi100 bctr cw "><br>
+			<center><p class="  font21 f1 mt0 mb10"><b>2018’s most fascinating governor’s election, explained</p><b/</center>	
+				<button class=" he30 wi10 cb mt0 ml140 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Sports</button>
+				<button class=" he30 wi15 cb bcp chb bordern borders ml6">#Trending</button><br>
+				<center><p class="f1 font15 ">Lorem Ipsum has been the industry's standard dummy text ever since <br>the 1500s,when an unknown printer took a galley.</p>
+
+
+	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 May</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+
+				</center>
+				</div>
+</div>
+			</div>
+
+
+
+			<div class="h150 wi100  ">
+
+				<div class="h120 wi24  fl">
+					<div class="h120 wi16 fl  "></div>
+					<div class="h120 wi84 fl small1 mt25"></div>
+				</div>
+
+				<div class="h120 wi75  fl"><b> 
+					<p class="font18 ml15 f1 mt25 chr">7 reasons Hollywood doesn’t make romantic<br> comedies anymore</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcp chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				<br>
+				<hr class="wi70 ml30 mt140 borderd">
+
+			</div>
+
+
+
+
+		<div class="h150 wi100  ">
+
+				<div class="h120 wi24  fl">
+					<div class="h120 wi16 fl  "></div>
+					<div class="h120 wi84 fl small2 mt25 "></div>
+				</div>
+
+				<div class="h120 wi75  fl"><b> 
+					<p class="font18 ml15 f1 mt25 chr">Must have gadgets in this century</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcp chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				<br>
+				<hr class="wi70 ml30 mt140 borderd">
+
+			</div>
+
+
+
+
+<div class="h150 wi100  ">
+
+				<div class="h120 wi24  fl">
+					<div class="h120 wi16 fl  "></div>
+					<div class="h120 wi84 fl small3 mt25"></div>
+				</div>
+
+				<div class="h120 wi75  fl"><b>  
+					<p class="font18 ml15 f1 mt25 chr">Why conservatives love to hate Alexandria<br> Ocasio-Cortez</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				<br>
+				<hr class="wi70 ml30 mt140 borderd">
+
+			</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+<
+
+
+<div class="h350 wi100 pd2 cw"> 
+	<div class="h350 wi100 bctr"> <br> <center> <p class=" font40 mb10  mt10 f1 ">
+	<b>Build your dream magazine now</b></p>
+
+	<p class="font21 f1 "> Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing<br> layouts and visual mockups. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>incididunt ut labore et dolore magna aliqua. </p>
+<br>
+	<button class="he40 wi8 cr borderr bordern chbr ">Buy Now</button>
+
+
+	 </center>
+</div>
+</div>
+
+
+<div class="h150 wi100 "><br><br>
+		<p class="mli15 f1 font28 mt20 mb10"><b>Most Viewed</b></p>
+		<hr class="wi75 mli15 mt25">
+	</div>
+
+
+<div class="h450 wi100">
+	<div class="h450 wi50 fl">
+
+
+		<div class="h450 wi65 fl">
+			
+			<div class="h4 w269 ml235 mostviewed1"> <div class="black"><br>
+					<p class="mli15 f1 font21 mt250 mb10 cw"><b>Technology and Music</b></p>
+					<hr class="wi85 ml20 mt0">
+				<center>	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 April</span>
+<br>
+	<button class=" he30 wi20 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi25 cb bcp chb bordern borders ml6">#Health</button>
+
+</center>
+
+
+				</div> </div>
+
+		</div>
+		<div class="h450 wi35 fl">
+			
+			<div class="h4 w269 ml15 mostviewed2"> <div class="black"><br>
+			<center>		<p class=" f1 font21 mt250 mb10 cw"><b>Raising a child</b></p></center>
+					<hr class="wi85 ml20 mt0">
+				<center>	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 April</span>
+<br>
+	<button class=" he30 wi20 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi25 cb bcg chb bordern borders ml6">#Health</button>
+
+</center>
+
+
+				</div> </div>
+
+		</div>
+
+
+</div>
+
+
+	<div class="h450 wi50 fl"> 
+
+		<div class="h450 wi40  fl">
+
+				<div class="h4 wi85 ml30 mostviewed3"> <div class="black"><br>
+			<center>		<p class=" f1 font21 mt250 mb10 cw"><b>Traveling</b></p></center>
+					<hr class="wi85 ml20 mt0">
+				<center>	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 May</span>
+<br>
+	<button class=" he30 wi20 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi25 cb bcg chb bordern borders ml6">#Health</button>
+
+</center>
+
+
+				</div> </div>
+			</div>
+
+			<div class="h450 wi60 fl">
+				<div class="h4 w269 ml5 mostviewed4"> <div class="black"><br>
+					<p class="mli15 f1 font21 mt250 mb10 cw"><b>Chester Bennington</b></p>
+					<hr class="wi85 ml20 mt0">
+				<center>	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 April</span>
+<br>
+	<button class=" he30 wi20 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi25 cb bcg chb bordern borders ml6">#Health</button>
+
+</center>
+
+
+				</div> </div>
+			</div>
+
+
+	</div>
+</div>
+
+
+
+<div class="h120 wi100 "><br><br>
+		<span class="mli15 f1 font28 mt20 mb10"><b>Categories</b></span>
+		<button class="he40 wi6 font15 bordern ml10 fr mr200 chb bcw">
+			<i class="fa fa-futbol-o" aria-hidden="true"></i>Sports</button>
+		<button class="he40 wi7 font15 bordern ml10 fr chb bcw">
+			<i class="fa fa-envelope-o" aria-hidden="true"></i>Business</button>
+		<button class="he40 wi7 font15 bordern ml10 fr chb bcw">
+			<i class="fa fa-globe" aria-hidden="true"></i>Politics</button>	
+		<button class="he40 wi8 font15 bordern fr chb bcw">
+			<i class="fa fa-gift" aria-hidden="true"></i>Entertainment</button>
+		
+
+		<hr class="wi75 mli15 mt10 mb10">
+	</div>
+
+<div class="h420 wi100">
+<div class="h420 wi50 fl">
+	
+	<div class="h420 wi70  ml235 blog6 ">
+				<div class="shadow">
+				<div class="hi50 wi100"></div>
+				<div class="hi50 wi100 bctr cw "><br>
+			<center>	<p class="  font21 f1 mt0 mb10"><b>New Generation of people loving food</b></p>	</center>
+				<button class=" he30 wi10 cb mt0 ml140 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Sports</button>
+				<button class=" he30 wi15 cb bcp chb bordern borders ml6">#Trending</button><br>
+				<center><p class="f1 font15 ">Lorem Ipsum has been the industry's standard dummy text ever since <br>the 1500s,when an unknown printer took a galley.</p>
+
+
+	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 May</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+
+				</center>
+				</div>
+</div>
+			</div>
+
+</div>
+<div class="h430 wi50 fl">
+	
+
+<div class="h150 wi100  ">
+
+				<div class="h120 wi24  fl">
+					<div class="h120 wi16 fl  "></div>
+					<div class="h120 wi84 fl small1 "></div>
+				</div>
+
+				<div class="h120 wi75  fl"><b> 
+					<p class="font18 ml15 f1 mt0 chr">7 reasons Hollywood doesn’t make romantic<br> comedies anymore</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcp chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				<br>
+				<hr class="wi70 ml30 mt110 borderd">
+
+			</div>
+
+
+
+
+		<div class="h150 wi100  ">
+
+				<div class="h120 wi24  fl">
+					<div class="h120 wi16 fl  "></div>
+					<div class="h120 wi84 fl small2 mt0 "></div>
+				</div>
+
+				<div class="h120 wi75  fl"><b> 
+					<p class="font18 ml15 f1 mt0 chr">Must have gadgets in this century</p></b><br>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcp chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				<br>
+				<hr class="wi70 ml30 mt110 borderd">
+
+			</div>
+
+
+
+
+<div class="h120 wi100  ">
+
+				<div class="h120 wi24  fl">
+					<div class="h120 wi16 fl  "></div>
+					<div class="h120 wi84 fl small3 mt0"></div>
+				</div>
+
+				<div class="h120 wi75  fl"><b>  
+					<p class="font18 ml15 f1 mt0 chr">Why conservatives love to hate Alexandria<br> Ocasio-Cortez</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				
+
+			</div>
+
+
+
+</div>
+</div>
+
+
+
+<div class="h450 wi100 ">
+	<div class="h450 wi50 fl">
+		
+				<div class="h150 wi100  ">
+
+				<div class="h120 wi50  fl">
+					<div class="h120 wi60 fl"></div>
+					<div class="h120 wi40 fl small4 mt25 "></div>
+				</div>
+
+				<div class="h120 wi50  fl"><b> 
+					<p class="font18 ml15 f1 mt25 chr">Watch: the 3 best performances of the 2018 VMLs</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				<br>
+				<hr class="wi70 ml235 mt140 borderd">
+
+			</div>
+
+
+
+
+		<div class="h150 wi100  ">
+
+				<div class="h120 wi50  fl">
+					<div class="h120 wi60 fl"></div>
+					<div class="h120 wi40 fl gallery1 mt25 "></div>
+				</div>
+
+				<div class="h120 wi50  fl"><b> 
+					<p class="font18 ml15 f1 mt25 chr">Music bringing people together everywhere</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcp chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				<br>
+				<hr class="wi70 ml235 mt140 borderd">
+
+			</div>
+
+
+
+
+<div class="h120 wi100  ">
+
+				<div class="h120 wi50  fl">
+					<div class="h120 wi60 fl"></div>
+					<div class="h120 wi40 fl small6 mt25 "></div>
+				</div>
+
+				<div class="h120 wi50  fl"><b> 
+					<p class="font18 ml15 f1 mt25 chr">“Speaks perfect English”: Trump’s offensive praise of a Latino Border Patrol agent</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				
+
+			</div>
+
+	</div>
+	<div class="h450 wi50 fl ">
+
+		<div class="h420 wi70 ml30 mt25 trending2 ">
+				<div class="shadow">
+				<div class="hi50 wi100"></div>
+				<div class="hi50 wi100 bctr cw "><br>
+			<center><p class="  font21 f1 mt0 mb10"><b>Serving the country</p><b/</center>	
+				<button class=" he30 wi10 cb mt0  bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Sports</button>
+				<button class=" he30 wi15 cb bcp chb bordern borders ml6">#Trending</button><br>
+				<center><p class="f1 font15 ">Lorem Ipsum has been the industry's standard dummy text ever since <br>the 1500s,when an unknown printer took a galley.</p>
+
+
+	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 May</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+
+				</center>
+				</div>
+</div>
+			</div>
+		
+
+	</div>
+
+
+</div>
+
+
+<br>
+
+
+
+<div class="h420 wi100">
+<div class="h420 wi50 fl">
+	
+	<div class="h420 wi70  ml235 blog6 ">
+				<div class="shadow">
+				<div class="hi50 wi100"></div>
+				<div class="hi50 wi100 bctr cw "><br>
+			<center>	<p class="  font21 f1 mt0 mb10"><b>New Generation of people loving food</b></p>	</center>
+				<button class=" he30 wi10 cb mt0 ml140 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Sports</button>
+				<button class=" he30 wi15 cb bcp chb bordern borders ml6">#Trending</button><br>
+				<center><p class="f1 font15 ">Lorem Ipsum has been the industry's standard dummy text ever since <br>the 1500s,when an unknown printer took a galley.</p>
+
+
+	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 May</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+
+				</center>
+				</div>
+</div>
+			</div>
+
+</div>
+<div class="h430 wi50 fl">
+	
+
+<div class="h150 wi100  ">
+
+				<div class="h120 wi24  fl">
+					<div class="h120 wi16 fl  "></div>
+					<div class="h120 wi84 fl small1 "></div>
+				</div>
+
+				<div class="h120 wi75  fl"><b> 
+					<p class="font18 ml15 f1 mt0 chr">7 reasons Hollywood doesn’t make romantic<br> comedies anymore</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcp chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				<br>
+				<hr class="wi70 ml30 mt110 borderd">
+
+			</div>
+
+
+
+
+		<div class="h150 wi100  ">
+
+				<div class="h120 wi24  fl">
+					<div class="h120 wi16 fl  "></div>
+					<div class="h120 wi84 fl small2 mt0 "></div>
+				</div>
+
+				<div class="h120 wi75  fl"><b> 
+					<p class="font18 ml15 f1 mt0 chr">Must have gadgets in this century</p></b><br>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcp chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				<br>
+				<hr class="wi70 ml30 mt110 borderd">
+
+			</div>
+
+
+
+
+<div class="h120 wi100  ">
+
+				<div class="h120 wi24  fl">
+					<div class="h120 wi16 fl  "></div>
+					<div class="h120 wi84 fl small3 mt0"></div>
+				</div>
+
+				<div class="h120 wi75  fl"><b>  
+					<p class="font18 ml15 f1 mt0 chr">Why conservatives love to hate Alexandria<br> Ocasio-Cortez</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				
+
+			</div>
+
+
+
+</div>
+</div>
+
+
+
+
+<div class="h450 wi100 ">
+	<div class="h450 wi50 fl">
+		
+				<div class="h150 wi100  ">
+
+				<div class="h120 wi50  fl">
+					<div class="h120 wi60 fl"></div>
+					<div class="h120 wi40 fl small4 mt25 "></div>
+				</div>
+
+				<div class="h120 wi50  fl"><b> 
+					<p class="font18 ml15 f1 mt25 chr">Watch: the 3 best performances of the 2018 VMLs</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				<br>
+				<hr class="wi70 ml235 mt140 borderd">
+
+			</div>
+
+
+
+
+		<div class="h150 wi100  ">
+
+				<div class="h120 wi50  fl">
+					<div class="h120 wi60 fl"></div>
+					<div class="h120 wi40 fl gallery1 mt25 "></div>
+				</div>
+
+				<div class="h120 wi50  fl"><b> 
+					<p class="font18 ml15 f1 mt25 chr">Music bringing people together everywhere</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcp chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				<br>
+				<hr class="wi70 ml235 mt140 borderd">
+
+			</div>
+
+
+
+
+<div class="h120 wi100  ">
+
+				<div class="h120 wi50  fl">
+					<div class="h120 wi60 fl"></div>
+					<div class="h120 wi40 fl small6 mt25 "></div>
+				</div>
+
+				<div class="h120 wi50  fl"><b> 
+					<p class="font18 ml15 f1 mt25 chr">“Speaks perfect English”: Trump’s offensive praise of a Latino Border Patrol agent</p></b>
+
+	<i class="fa fa-user font15 ml15 " aria-hidden="true"></i>
+	<span>John Doe</span>
+
+	<i class="fa fa-clock-o font15  ml5" aria-hidden="true"></i>
+	<span>12 May</span>
+
+	<i class="fa fa-comments-o font15  ml5" aria-hidden="true"></i>
+	<span > 5 comment</span><br>
+
+
+	<button class=" he30 wi15 cb mt10 ml15 bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Health</button>
+
+
+
+				</div>
+				
+
+			</div>
+
+	</div>
+	<div class="h450 wi50 fl ">
+
+		<div class="h420 wi70 ml30 mt25 trending3 ">
+				<div class="shadow">
+				<div class="hi50 wi100"></div>
+				<div class="hi50 wi100 bctr cw "><br>
+			<center><p class="  font21 f1 mt0 mb10"><b>Serving the country</p><b/</center>	
+				<button class=" he30 wi10 cb mt0  bcb chb bordern borders">#New</button>
+				<button class=" he30 wi20 cb mt0  bcg chb bordern borders ml6">#Sports</button>
+				<button class=" he30 wi15 cb bcp chb bordern borders ml6">#Trending</button><br>
+				<center><p class="f1 font15 ">Lorem Ipsum has been the industry's standard dummy text ever since <br>the 1500s,when an unknown printer took a galley.</p>
+
+
+	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 May</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+
+				</center>
+				</div>
+</div>
+			</div>
+		
+
+	</div>
+
+
+</div>
+
+
+<div class="h150 wi100 "><br><br>
+		<p class="mli15 f1 font28 mt20 mb10"><b>Fashion</b></p>
+		<hr class="wi75 mli15 mt25">
+	</div>
+
+
+
+
+
+<div class="h550 wi100 ">
+
+	<div class="h550 wi75 mli15">
+
+	<div class=" h550 wi25  bsolid fl">
+		<div class="wi100  h3 bsolid fashion2 ">
+
+
+			<div class="black"><br>
+					<p class="ml45 f1 font18 mt210 mb10 cw"><b>Upcoming 50% sales off</b></p>
+					<hr class="wi85 ml20 mt0">
+				<center>	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 April</span>
+<br>
+	<button class=" he30 wi20 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi25 cb bcp chb bordern borders ml6">#Health</button>
+
+</center>
+
+
+				</div>
+			
+
+		</div>
+
+		<div class=" h2 wi100  bsolid fashion1">
+
+
+			<div class="black"><br>
+					<p class="ml45 f1 font18 mt72 mb10 cw"><b>Best Outfit For Winter</b></p>
+					<hr class="wi85 ml20 mt0">
+				<center>	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 April</span>
+<br>
+	<button class=" he30 wi20 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi25 cb bcp chb bordern borders ml6">#Health</button>
+
+</center>
+
+
+				</div>
+			
+
+
+
+		</div>
+
+	</div>
+
+	<div class=" h550 wi25  bsolid fl">
+		<div class=" h2 wi100  bsolid fashion4">
+
+
+
+			<div class="black"><br>
+					<p class="ml45 f1 font18 mt72 mb10 cw"><b>The Killer Looks</b></p>
+					<hr class="wi85 ml20 mt0">
+				<center>	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 April</span>
+<br>
+	<button class=" he30 wi20 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi25 cb bcg chb bordern borders ml6">#Health</button>
+
+</center>
+
+
+				</div>
+			
+
+
+
+		</div>
+
+		<div class="wi100  h3 bsolid fashion3">
+
+
+			<div class="black"><br>
+					<p class="ml45 f1 font18 mt210 mb10 cw"><b>Look Best For Interview</b></p>
+					<hr class="wi85 ml20 mt0">
+				<center>	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 April</span>
+<br>
+	<button class=" he30 wi20 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi25 cb bcp chb bordern borders ml6">#Health</button>
+
+</center>
+
+
+				</div>
+			
+
+
+		</div>
+	</div>
+
+	<div class=" h550 wi49 bsolid fl">
+		<div class=" h550 wi100 bsolid fl fashion5">
+
+
+
+			<div class="black"><br>
+			<center>		<p class=" f1 font21 mt410 mb10 cw"><b>Lopez announces her new fashion collection</b></p></center>
+					<hr class="wi85 ml40 mt0">
+				<center>	<i class="fa fa-user font15  cw" aria-hidden="true"></i>
+	<span class="cw">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 April</span>
+<br>
+	<button class=" he30 wi10 cb mt5 bcp chb bordern borders">#new</button>
+	<button class=" he30 wi15 cb bcg chb bordern borders ml6">#Health</button>
+
+</center>
+
+
+				</div>
+			
+
+
+		</div>
+	</div>
+
+</div>
+</div>
+
+<br>
+
+
+<div class="h550 wi100  ">
+
+	<div class="h550 wi75 mli15 ">
+
+	<div class="hi50 wi100">
+
+		<div class="hi100 wi33  bsolid fl  gallery1"><div class="hi100 wi100 bctr">
+<br>
+	<center>		<p class=" f1 font21 mt72 mb10 cw"><b>Top 10 guitar Riffs</b></p>
+					
+					<button class=" he30 wi15 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi20 cb bcg chb bordern borders ml6">#Health</button>
+	<button class=" he30 wi25 cb bcp chb bordern borders ml6">#Trending</button>
+					<br>
+					
+					<i class="fa fa-user font15 mt10 cw" aria-hidden="true"></i>
+	<span class="cw ">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 April</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+
+
+
+</center>
+			
+		</div></div>
+
+		<div class="hi100 wi33 bsolid fl  bctr gallery2"><div class="hi100 wi100 bctr">
+			<br>
+
+			<center>		<p class=" f1 font21 mt72 mb10 cw"><b>Top Golf Courts</b></p>
+					
+					<button class=" he30 wi15 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi20 cb bcg chb bordern borders ml6">#Health</button>
+	<button class=" he30 wi25 cb bcp chb bordern borders ml6">#Trending</button>
+					<br>
+					
+					<i class="fa fa-user font15 mt10 cw" aria-hidden="true"></i>
+	<span class="cw ">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 April</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+
+
+
+</center>
+			
+
+		</div></div>
+
+		<div class="hi100 wi33 bsolid fl  bctr gallery3">
+
+
+			<div class="hi100 wi100 bctr">
+				<br>
+
+			<center>		<p class=" f1 font21 mt72 mb10 cw"><b>Early Morning Breakfast</b></p>
+					
+					<button class=" he30 wi15 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi20 cb bcg chb bordern borders ml6">#Health</button>
+	<button class=" he30 wi25 cb bcp chb bordern borders ml6">#Trending</button>
+					<br>
+					
+					<i class="fa fa-user font15 mt10 cw" aria-hidden="true"></i>
+	<span class="cw ">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 April</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+
+	
+
+
+</center>
+			
+
+		</div>
+			
+
+		</div>
+
+	</div>
+
+	<div class="hi50 wi100">
+
+		<div class="hi100 wi33  bsolid fl bctr gallery4">
+
+			<div class="hi100 wi100 bctr">
+				<br>
+
+			<center>		<p class=" f1 font21 mt72 mb10 cw"><b>Children The Next Gen</b></p>
+					
+					<button class=" he30 wi15 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi20 cb bcg chb bordern borders ml6">#Health</button>
+	<button class=" he30 wi25 cb bcp chb bordern borders ml6">#Trending</button>
+					<br>
+					
+					<i class="fa fa-user font15 mt10 cw" aria-hidden="true"></i>
+	<span class="cw ">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 April</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+
+	
+
+
+</center>
+			
+
+		</div>
+			
+
+		</div>
+
+		<div class="hi100 wi33 bsolid fl  bctr gallery5">
+
+
+			<div class="hi100 wi100 bctr">
+				<br>
+
+			<center>		<p class=" f1 font21 mt72 mb10 cw"><b>Summer Beach</b></p>
+					
+					<button class=" he30 wi15 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi20 cb bcg chb bordern borders ml6">#Health</button>
+	<button class=" he30 wi25 cb bcp chb bordern borders ml6">#Trending</button>
+					<br>
+					
+					<i class="fa fa-user font15 mt10 cw" aria-hidden="true"></i>
+	<span class="cw ">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 April</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+
+	
+
+
+</center>
+			
+
+		</div>
+			
+
+		</div>
+
+		<div class="hi100 wi33 bsolid fl bctr gallery6">
+
+
+			<div class="hi100 wi100 bctr">
+				<br>
+
+			<center>		<p class=" f1 font21 mt72 mb10 cw"><b>Mountains Calling</b></p>
+					
+					<button class=" he30 wi15 cb mt5 bcb chb bordern borders">#new</button>
+	<button class=" he30 wi20 cb bcg chb bordern borders ml6">#Health</button>
+	<button class=" he30 wi25 cb bcp chb bordern borders ml6">#Trending</button>
+					<br>
+					
+					<i class="fa fa-user font15 mt10 cw" aria-hidden="true"></i>
+	<span class="cw ">John Doe</span>
+
+	<i class="fa fa-clock-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw ">12 April</span>
+
+	<i class="fa fa-comments-o font15 cw ml5" aria-hidden="true"></i>
+	<span class="cw "> 5 comment</span>
+
+	
+
+
+</center>
+			
+
+		</div>
+			
+
+		</div>
+
+	</div>
+
+		
+	</div>
+	
+</div>
+<br>
+
+
+
+
+
+<div class="h9 wi100 cb cw footerbg ">
+
+	<div class="h1 wi100 "><br>
+		<center> <p class="font21 f1 mb10"> <b>Find Us on Instagram</b> </p>
+			<hr class="wi13"> </center>
+	</div>
+	
+
+	<div class="h2 wi75  ml200">
+
+
+		<div class="hi100 w190 fl footer2"> </div>
+
+		<div class="hi100 w190 fl footer1"> </div>
+
+		<div class="hi100 w190 fl footer3"> </div>
+
+		<div class="hi100 w190 fl footer4"> </div>
+
+		<div class="hi100 w190 fl footer2"> </div>
+
+		<div class="hi100 w190 fl footer1"> </div>
+
+	</div>
+		<br>
+		<br>
+		<br>
+
+
+
+<div class="h3 wi100 ">
+
+
+	<div class=" h3 wi37  fl">
+		<p class="font21 f1 ml200 "> <b>NewMag</b> </p>
+
+		<hr class="wi55 ml200 bordercg">
+
+		<span class="ml200 cgrey">
+			amet, consetetur sadipscing elitr, sed diam nonumy</span> <span class="ml200 cgrey">eirmod tempor invidunt ut labore et dolore magna</span><span class="ml200 cgrey"> aliquyam erat.
+		</span><br>
+
+<p class="cw font18 fl ml200 mt20 chr"> <i class="fa fa-facebook" aria-hidden="true"></i></p>
+ <p class="cw font18 fl ml10 mt20 chr"><i class="fa fa-twitter" aria-hidden="true"></i></p> 
+ <p class="cw font18 fl ml10 mt20 chr"><i class="fa fa-instagram" aria-hidden="true"></i></p>
+
+	</div>
+
+	<div class=" h3 wi15 fl">
+
+		<p class="font21 f1  ml20"> <b>Categories</b> </p>
+		<hr class="wi80 ml20 bordercg">
+
+		<p class="cgrey ml20"> Entertainment</p>
+
+		<p class="cgrey ml20 mt25"> Sports</p>
+
+		<p class="cgrey ml20 mt25"> Polictics</p>
+
+		<p class="cgrey ml20 mt25"> National</p>
+
+		<p class="cgrey ml20 mt25"> Blog</p>
+
+		
+
+	</div>
+
+	<div class=" h3 wi15  fl">
+
+		<p class="font21 f1  ml20"> <b>Popular Tags</b> </p>
+		<hr class="wi80 ml20 bordercg">
+
+		<p class="cgrey ml20"> Entertainment</p>
+
+		<p class="cgrey ml20 mt25"> Sports</p>
+
+		<p class="cgrey ml20 mt25"> Polictics</p>
+
+		<p class="cgrey ml20 mt25"> National</p>
+
+		<p class="cgrey ml20 mt25"> International</p>
+
+		
+
+
+	</div>
+
+	<div class=" h3 wi33  fl">
+
+		<p class="font21 f1 "> <b>Newsletter</b> </p>
+
+		<hr class="wi55  bordercg fl mt0">
+
+		<p class="cgrey mt40  ">Dont Miss Anything</p>
+
+		<p class="cgrey  mt25">ubscribe to our #newsletter</p>
+
+
+
+		<div class="he40 wi55 "><div class="he40 wi80 fl">
+			<input type="email" name="email" class="he30 wi100 fl" placeholder="Enter Email"></div>
+			<div class="he37 wi20 bcr mt fl ">
+			<center>	<i class="fa fa-paper-plane mt10" aria-hidden="true"></i></center>
+			</div>
+		</div>
+
+
+		
+	</div>
+
+
+	
+
+
+</div>
+
+
+
+<div class="h150 wi100 ">
+
+<center>
+	<hr class="wi25 bordercg mt25">
+	<br>
+	<span class="cgrey">Copyright © 2023 </span>
+	<span class=""><a href="https://hitechskillindia.in/" class="text cr"> Hi - Tech</a></span>
+	<span class="cgrey"> - All Rights reserved</span>
+	<hr class="wi25 bordercg mt25">
+	
+
+</center>
+</div>
+
+
+
+	
+	
+
+</div>
+</div>
+
+
+
+
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+</body>
+</html>	
